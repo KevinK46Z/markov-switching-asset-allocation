@@ -1,0 +1,11 @@
+Data/
+Output/
+Output_ref/
+logs/
+__pycache__/
+*.pyc
+*.log
+.spyproject/
+.vscode/
+desktop.ini
+Thumbs.db
