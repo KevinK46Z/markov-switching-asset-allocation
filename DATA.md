@@ -47,8 +47,7 @@ applies its own filters. Select `KYTREASNO`, `KYCRSPID`, `CRSPID`, `TCUSIP`,
 `IFCPDTF`, `TFCALDT`, `TNOTICE`, `IYMCN`, `ITYPE`, `IUNIQ`, `ITAX`, `IFLWR`,
 `TBANKDT`, `TSTRIPELIG`, `TFRGNTGT`, `TMBID`, `TMASK`, `TMNOMPRC`,
 `TMNOMPRC_FLG`, `TMSOURCR`, `TMACCINT`, `TMRETNUA`, `TMYLD`, `TMDURATN`,
-`TMTOTOUT`, `TMPUBOUT`, `TMPCYLD`, `TMRETNXS` and `TMPDINT`. The thirteen
-columns `01_build_data.py` reads are listed under "What each file supplies".
+`TMTOTOUT`, `TMPUBOUT`, `TMPCYLD`, `TMRETNXS` and `TMPDINT`. 
 
 **`Bond_FixedTermTS.csv`.** CRSP, Treasuries, Fixed Term Indexes. Set the
 frequency to monthly. The variable list on the form shows the daily names.
