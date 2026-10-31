@@ -17,7 +17,8 @@ the new target.
             the Memmel test at REF_BP (Section 8.2, Chapter 9)
     PART C  no-trade band (Table 8.3)
     PART D  ZLB split net of REF_BP (Table 8.4)
-    Figures 8.1 and 8.2
+    Figure 8.1, and a figure of the net Sharpe ratio against the cost level 
+    that is not in the thesis
 
 Net results depend on gamma, so every one is at COST_GAMMA.
 
@@ -636,8 +637,8 @@ def part_d(bts, x):
 # ==========================================================================
 def figures(bts, x):
     """
-    Draw the two figures of Chapter 8: traded turnover over time (Figure
-    8.1) and net Sharpe ratio against the cost level (Figure 8.2).
+    Draw the two figures of Chapter 8: traded turnover over time (Figure 8.1) 
+    and net Sharpe ratio against the cost level (not in the thesis)
 
     Parameters
     ----------
@@ -657,7 +658,7 @@ def figures(bts, x):
     rf = bts[first]["rf"].to_numpy(dtype=float)
     idx = bts[first].index.to_timestamp("M")
 
-    # ---- net Sharpe ratio against the cost level (Figure 8.2) ------------
+    # ---- net Sharpe ratio against the cost level ------------
     # Hard rule of every rung and the benchmark, rebalanced every month, on
     # a grid from 0 to 100 bp one way
     grid = np.linspace(0.0, 100.0, 41)                # basis points, one way

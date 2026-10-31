@@ -435,7 +435,7 @@ def part_b(panel, zcols, tag, label="M1"):
     for c, name in (("pi1_h", "hard"), ("pi1_s", "soft")):
         print(f"   blend weight pi1, {name}: mean {bt[c].mean():.3f}, "
               f"range {bt[c].min():.3f} to {bt[c].max():.3f}")
-    # how far apart the two rules are (Section 6.5).  Zero in every month
+    # how far apart the two rules are (Section 6.4).  Zero in every month
     # where the filter is confident, so the mean absolute gap is the size of
     # the disagreement.
     gap = (bt["pi1_h"] - bt["pi1_s"]).abs()
@@ -461,7 +461,7 @@ def part_c(bt, tag):
     gamma-free form, set against Ang and Bekaert's published table.
 
     Prints the performance table at gamma in {2, 3, 4, 5, 10} (Table 6.3,
-    Panel B) and their printed Table 8 (2002), then the gamma-free
+    Panel B, at gamma = 5)) and their printed Table 8 (2002), then the gamma-free
     decomposition of Appendix A.3 for each strategy next to theirs (Table
     6.3, Panel A).
 

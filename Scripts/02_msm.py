@@ -1524,8 +1524,8 @@ def derived_moments(theta, k):
     -------
     dict
         For each regime: the standard deviation of the short-rate, bond and
-        equity shocks in percent per month, and the correlation between the
-        bond and the equity shock.
+        equity shocks in percent per month, and the correlations between the
+        three shocks.
     """
     p = unpack(theta, k)
     out = {}
@@ -1535,6 +1535,8 @@ def derived_moments(theta, k):
         out[f"sd bond ({tag})"]       = np.sqrt(S[1, 1])
         out[f"sd equity ({tag})"]     = np.sqrt(S[2, 2])
         out[f"corr bond-eq ({tag})"]  = S[1, 2] / np.sqrt(S[1, 1] * S[2, 2])
+        out[f"corr short-bond ({tag})"] = S[0, 1] / np.sqrt(S[0, 0] * S[1, 1])
+        out[f"corr short-eq ({tag})"]   = S[0, 2] / np.sqrt(S[0, 0] * S[2, 2])
     return out
 
 

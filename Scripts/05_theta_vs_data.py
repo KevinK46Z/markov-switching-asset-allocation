@@ -2,7 +2,7 @@
 05_theta_vs_data.py
 ===================
 Tests whether the shortfall against Ang and Bekaert lies in the estimated
-parameters or in the realised returns (Section 6.6, Table 6.6).  Run after
+parameters or in the realised returns (Section 6.5, Table 6.6).  Run after
 03_replication.py and before 04_diagnostics.py.  One filter pass per
 configuration, nothing is re-estimated.
 
@@ -29,7 +29,7 @@ Prints, for each bond series:
         1985 to 2000 (Table 6.6)
     Ang and Bekaert's printed Sharpe ratios and gaps (Table 6.6)
     the mean regime path and positions, among them the mean bond weight of
-        the benchmark (footnote in Section 6.6)
+        the benchmark 
     the test of Ang and Bekaert's in-sample gap at the correlation and
         sample length measured here (Table 6.6)
 
